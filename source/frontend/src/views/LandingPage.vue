@@ -14,6 +14,7 @@
 
 <script>
 import axios from "axios"
+import getHeaders from "../utils"
 
 export default {
   name: "LandingPage",
@@ -31,10 +32,9 @@ export default {
         password: this.password
       })
       .then( response => {
-        console.log(response.data)
         localStorage.setItem("token",response.data.access)
+        this.$router.push("/")
       }).catch( response => {
-        console.log("Caio no cath")
         console.log(response)
       })
     }
