@@ -42,7 +42,7 @@ Caso não possua e deseje utilizar o do composer, você dever executar o comando
 
 ## Para preparar a aplicação backend
 
-Depois de rodar o composer, em outro terminal ou baa, se for o caso, navege para /backend, lá execute alguns comandos:
+Depois de rodar o composer, em outro terminal ou aba, se for o caso, navege para /backend, lá execute alguns comandos:
 
 * python manage.py para preparar as migratios, se for o caso
 
@@ -50,6 +50,22 @@ Depois de rodar o composer, em outro terminal ou baa, se for o caso, navege para
 
 * python manage.py createsuperuser para criar um usuario . Util para depurar
 
-* python manage.py runerver para rodar a aplicação de fato, na porta 8080. se colocar um numero permitido após runserver, este será a porta da aplicação
+* python manage.py runerver para rodar a aplicação de fato, na porta 8000. se colocar um numero permitido após runserver, este será a porta da aplicação
 
-Com isso a aplicação backend estará funcionando
+Com isso a aplicação backend estará funcionando.
+
+## Para preparar o aplicação frontend
+
+Depois de rodar o composer e o backend, em outro terminal ou aba, se for o caso, navege para /frontend, lá execute alguns comandos:
+
+* npm install para instalar as bibliotecas necessárias
+
+* npm run serve para inicar o front. O terminal erá exibir a url para poder acessar o site
+
+### Desafio 2
+
+O script do desafio 2 estar na raiz do projeto, chamado datilografia.py . Para executar, basta digitar:
+
+```bash
+python datilografia.py <numero de casos>
+```
