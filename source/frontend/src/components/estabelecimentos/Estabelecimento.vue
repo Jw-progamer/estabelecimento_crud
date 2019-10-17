@@ -3,11 +3,17 @@
     <v-list-item-content>
       <v-list-item-title>
         <router-link
-          :to="{path: '/edit/'+estabelecimento['id'], params:estabelecimento}"
-        >{{estabelecimento.nome}}</router-link>
+          :to="{
+            path: '/edit/' + estabelecimento['id'],
+            params: estabelecimento
+          }"
+          >{{ estabelecimento.nome }}</router-link
+        >
       </v-list-item-title>
-      <v-list-item-subtitle>{{estabelecimento.cnpj}}</v-list-item-subtitle>
-      <v-list-item-subtitle>{{estabelecimento.endereco}}</v-list-item-subtitle>
+      <v-list-item-subtitle>{{ estabelecimento.cnpj }}</v-list-item-subtitle>
+      <v-list-item-subtitle>{{
+        estabelecimento.endereco
+      }}</v-list-item-subtitle>
     </v-list-item-content>
   </v-list-item>
 </template>
@@ -23,5 +29,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

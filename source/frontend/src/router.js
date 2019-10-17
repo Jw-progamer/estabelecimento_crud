@@ -20,6 +20,13 @@ const router = new Router({
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import("./views/EstabelecimentoPage.vue")
+    },
+    {
+      path: "/edit/:estabelecimento_key",
+      name: "fomulario",
+      component: () => import("./views/EditePage.vue"),
+      props: true,
+      meta: { requiresAuth: true }
     }
   ]
 });

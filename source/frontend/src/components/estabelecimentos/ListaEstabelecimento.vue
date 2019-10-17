@@ -2,7 +2,10 @@
   <v-content>
     <v-list three-line>
       <template v-for="estabelecimento in estabelecimentos">
-        <Estabelecimento :estabelecimento="estabelecimento" :key="estabelecimento['id']" />
+        <Estabelecimento
+          :estabelecimento="estabelecimento"
+          :key="estabelecimento['id']"
+        />
       </template>
     </v-list>
   </v-content>
@@ -39,5 +42,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

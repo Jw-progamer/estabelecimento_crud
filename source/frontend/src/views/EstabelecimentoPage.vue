@@ -8,9 +8,6 @@
 </template>
 
 <script>
-import axios from "axios";
-import getHeaders from "../utils";
-
 import ListaEstabelecimento from "../components/estabelecimentos/ListaEstabelecimento";
 
 export default {
