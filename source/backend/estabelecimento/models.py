@@ -12,7 +12,13 @@ class Estabelecimento(models.Model):
     raio_distancia = models.IntegerField()
 
     def __str__(self):
-        return self.nome
+        return self.nome+str(self.raio_distancia)
+
+    def distance(self, loc):
+        location = self.raio_distancia - loc
+        if location < 0:
+            return location * -1
+        return location
 
     class Meta:
         verbose_name = "Estabelecimento"

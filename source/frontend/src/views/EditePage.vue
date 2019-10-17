@@ -1,7 +1,7 @@
 <template>
   <v-container bottom>
     <v-spacer></v-spacer>
-    <v-form style="padding: 70px;">
+    <v-form id="form">
       <label for="nome_estabelecimento"></label>
       <v-text-field
         name="nome_estabelecimento"
@@ -41,10 +41,11 @@
             color="warning"
             @click="deleteDatabase"
             :disabled="estabelecimento_key == 'new'"
+            class="form_button"
             >revomer estabelecimento da lista</v-btn
           >
           <v-spacer></v-spacer>
-          <v-btn block color="info" @click="updateDatabase"
+          <v-btn block color="info" @click="updateDatabase" class="form_button"
             >Adicionar/Atualizar estabelecimento na lista</v-btn
           >
         </v-flex>
@@ -153,4 +154,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#form {
+  padding: 70px;
+}
+.form_button {
+  margin-bottom: 15px;
+}
+</style>

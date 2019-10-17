@@ -14,6 +14,9 @@
       <v-list-item-subtitle>{{
         estabelecimento.endereco
       }}</v-list-item-subtitle>
+      <v-list-item-subtitle>{{
+        estabelecimento.raio_distancia
+      }}</v-list-item-subtitle>
     </v-list-item-content>
   </v-list-item>
 </template>
